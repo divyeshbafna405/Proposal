@@ -9,7 +9,9 @@
 # 3. Change the values for the GAR_LOCATION, GKE_ZONE, GKE_CLUSTER, IMAGE, REPOSITORY and DEPLOYMENT_NAME environment variables (below).
 #
 # For more support on how to run the workflow, please visit https://github.com/google-github-actions/setup-gcloud/tree/master/example-workflows/gke-kustomize
-
+              - name: Authenticate to Google Cloud
+                uses: google-github-actions/auth@v2.1.2
+            
 name: Build and Deploy to GKE
 
 on:
